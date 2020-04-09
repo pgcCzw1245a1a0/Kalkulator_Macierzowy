@@ -5,3 +5,5 @@ Projekt NPG AiR 2020
 3. Filip Gacek
 4. Artur Mzyk
 5. Olaf Zdziebko
+
+Trello: https://trello.com/b/cgRmHRAq/narz%C4%99dzia-pracy-grupowej-pojekt
