@@ -1,5 +1,5 @@
 # Kalkulator_Macierzowy
-Projekt NPG AiR 2020
+Projekt NPG AiR 2020  Grupa 2a.2
 1. Patryk Chorąży
 2. Szymon Majewski
 3. Filip Gacek
