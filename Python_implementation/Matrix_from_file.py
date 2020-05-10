@@ -1,12 +1,12 @@
 import numpy as np
 
+
 def check_data_type(matrix):    #checking if matrix include float type number or only int
     for rows in matrix:
         for col in rows:
             if col.find('.') != -1:
                 return True
-            else:
-                continue
+
     return False
 
 
@@ -19,6 +19,7 @@ def read_matrix(file):
     else:
         result = [list(map(int, i)) for i in matrix]
 
+    file.close(file)
     return result
 
 
@@ -26,7 +27,4 @@ def close_file(file):
     file.close()
 
 
-matrix = read_matrix('macierz.txt')
-print(matrix)
-print(matrix[3][4] * matrix[2][1])
 
