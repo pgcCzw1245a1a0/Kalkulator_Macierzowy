@@ -1,6 +1,7 @@
 #TODO
 from numpy import *
 
+
 class Matrix:
 
     def __init__(self, matrix):
@@ -16,8 +17,10 @@ class Matrix:
 def multiplication(matrix_1, matrix_2):
     return matrix_1 @ matrix_2
 
-def addition(matrix_1, matrix_2):
+
+def addition(matrix_1, matrix_2): #TO DO check if matrix is nxn
     return matrix_1 + matrix_2
 
-def subrtaction(matrix_1, matrix_2):
+
+def subrtaction(matrix_1, matrix_2): #TO DO check if matrix is nxn
     return matrix_1 - matrix_2
