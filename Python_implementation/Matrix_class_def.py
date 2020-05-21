@@ -7,11 +7,14 @@ class Matrix:
     def __init__(self, matrix):
         self.matrix = array(matrix)
 
+
     def dim(self):  #return dimention of matrix [rows x columns]
         return self.matrix.shape
 
     def transpose(self): #return transposed matrix
         return self.matrix.transpose()
+
+
 
 
 def multiplication(matrix_1, matrix_2):
