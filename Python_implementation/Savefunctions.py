@@ -28,3 +28,22 @@ def load_operation(cnt):
         return op_dict
 
 
+def prepare_memory(counter):
+    if not os.path.exists("./memory"):
+        os.mkdir("./memory")
+    if counter > 10:
+        os.remove("./memory/operation_memory_{}.json".format(counter - 10))
+
+# mat1 = np.array([[2,2], [2,3]])
+# mat2 = np.array([[2,2], [2,4]])
+# result = mat1 @ mat2
+# save_operation(mat1, mat2, "@", result, 1)
+# load_operation(1)
+
+# test for i in range(2,14):
+#     save_operation(mat1, mat2, "@", result, i)
+#     load_operation(i)
+
+
+
+
