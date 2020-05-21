@@ -18,4 +18,13 @@ def save_operation(matrix1, matrix2, sign, result, counter):
         file.write(json_dict)
 
 
+def load_operation(cnt):
+    filename = "./memory/operation_memory_{}.json".format(cnt)
+    with open(filename, "r") as file:
+        file_content = file.read()
+        print(file_content)
+        op_dict = json.loads(file_content)
+        print(op_dict['mat1'])
+        return op_dict
+
 
