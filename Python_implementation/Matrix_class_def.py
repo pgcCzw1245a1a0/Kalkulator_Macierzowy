@@ -32,9 +32,9 @@ def multiplication(matrix_1: Matrix, matrix_2: Matrix)-> Matrix:
 
 def addition(matrix_1: Matrix, matrix_2: Matrix)-> Matrix: #TO DO check if matrix is nxn
     try
-    _, c1 = matrix_1.dim
-    r2, _ = matrix_2.dim
-    if(c1 != r2):
+    r1, c1 = matrix_1.dim
+    r2, c2 = matrix_2.dim
+    if(c1 != c2 and r1 != r2):
         raise ValueError("Wrong size of matrix")
     except ValueError("Wrong size of matrix")
 
@@ -43,9 +43,9 @@ def addition(matrix_1: Matrix, matrix_2: Matrix)-> Matrix: #TO DO check if matri
 
 def subrtaction(matrix_1: Matrix, matrix_2: Matrix)-> Matrix: #TO DO check if matrix is nxn
     try
-    _, c1 = matrix_1.dim
-    r2, _ = matrix_2.dim
-    if(c1 != r2):
+    r1, c1 = matrix_1.dim
+    r2, c2 = matrix_2.dim
+    if(c1 != c2 and r1 != r2):
         raise ValueError("Wrong size of matrix")
     except ValueError("Wrong size of matrix")
 
