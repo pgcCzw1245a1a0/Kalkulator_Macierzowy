@@ -1,10 +1,12 @@
 #TODO
 from numpy import *
+from typing import TypeVar
 
 
 class Matrix:
 
     def __init__(self, matrix):
+        super.__init__(*args, **kwargs)
         self.matrix = array(matrix)
 
 
@@ -14,16 +16,37 @@ class Matrix:
     def transpose(self): #return transposed matrix
         return self.matrix.transpose()
 
+Matrix = TypeVar("Matrix", bound= Matrix)
 
 
+def multiplication(matrix_1: Matrix, matrix_2: Matrix)-> Matrix:
+    try
+    _, c1 = matrix_1.dim
+    r2, _ = matrix_2.dim
+    if(c1 != r2):
+        raise ValueError("Wrong size of matrix")
+    except ValueError("Wrong size of matrix")
 
-def multiplication(matrix_1, matrix_2):
     return matrix_1 @ matrix_2
 
 
-def addition(matrix_1, matrix_2): #TO DO check if matrix is nxn
+def addition(matrix_1: Matrix, matrix_2: Matrix)-> Matrix: #TO DO check if matrix is nxn
+    try
+    _, c1 = matrix_1.dim
+    r2, _ = matrix_2.dim
+    if(c1 != r2):
+        raise ValueError("Wrong size of matrix")
+    except ValueError("Wrong size of matrix")
+
     return matrix_1 + matrix_2
 
 
-def subrtaction(matrix_1, matrix_2): #TO DO check if matrix is nxn
+def subrtaction(matrix_1: Matrix, matrix_2: Matrix)-> Matrix: #TO DO check if matrix is nxn
+    try
+    _, c1 = matrix_1.dim
+    r2, _ = matrix_2.dim
+    if(c1 != r2):
+        raise ValueError("Wrong size of matrix")
+    except ValueError("Wrong size of matrix")
+
     return matrix_1 - matrix_2
