@@ -32,6 +32,14 @@ def prepare_memory(counter):
     if counter > 10:
         os.remove("./memory/operation_memory_{}.json".format(counter - 10))         #Jeśli jest więcej niż 10 zadań to usuwane jest najstarsze
 
+
+def delete_operation(id):                                                           #funkcja usuwa zadanie o podanym ID
+    if os.path.exists("./memory"):
+        os.remove("./memory/operation_memory_{}.json".format(id))
+    else:
+        print("File does not exist!")
+
+
 # mat1 = np.array([[2,2], [2,3]])
 # mat2 = np.array([[2,2], [2,4]])
 # result = mat1 @ mat2
